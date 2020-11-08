@@ -87,16 +87,16 @@ class App extends React.Component {
                       </div>
                       <div class="row">
                         <div class="column">
-                          <img src={"https://tiltproof-backend.herokuapp.com/gettilt/img/" + this.state.searchTerm + "_kda"} width="600" height="350"/>
-                          <img src={"https://tiltproof-backend.herokuapp.com/gettilt/img/" + this.state.searchTerm + "_gepm"} width="600" height="350"/>
+                          <img src={"https://tiltproof-backend.herokuapp.com/img/" + this.state.searchTerm + "_kda"} width="600" height="350"/>
+                          <img src={"https://tiltproof-backend.herokuapp.com/img/" + this.state.searchTerm + "_gepm"} width="600" height="350"/>
                         </div>
                         {/* <div class="column">
                           <img src={"http://127.0.0.1:5000/img/" + this.state.searchTerm + "_pddtc"} width="600" height="350"/>
                           <img src={"http://127.0.0.1:5000/img/" + this.state.searchTerm + "_mddtc"} width="600" height="350"/>
                         </div> */}
                         <div class="column">
-                          <img src={"https://tiltproof-backend.herokuapp.com/gettilt/img/" + this.state.searchTerm + "_tddtc"} width="600" height="350"/>
-                          <img src={"https://tiltproof-backend.herokuapp.com/gettilt/img/" + this.state.searchTerm + "_tmk"} width="600" height="350"/>
+                          <img src={"https://tiltproof-backend.herokuapp.com/img/" + this.state.searchTerm + "_tddtc"} width="600" height="350"/>
+                          <img src={"https://tiltproof-backend.herokuapp.com/img/" + this.state.searchTerm + "_tmk"} width="600" height="350"/>
                         </div>
                       </div>
                     </div>
