@@ -29,8 +29,8 @@ class App extends React.Component {
   };
 
   makeApiCall = searchInput => {
-    // var searchUrl = 'https://tiltproof-backend.herokuapp.com/gettilt=${searchInput}';
-    var searchUrl = `http://127.0.0.1:5000/gettilt/${searchInput}`;
+    var searchUrl = `https://tiltproof-backend.herokuapp.com/gettilt/${searchInput}`;
+    // var searchUrl = `http://127.0.0.1:5000/gettilt/${searchInput}`;
     console.log(searchInput)
     fetch(searchUrl)
       .then(response => {
@@ -98,12 +98,12 @@ class App extends React.Component {
                           <img src={"http://127.0.0.1:5000/img/" + this.state.searchTerm + "_kda"} width="600" height="350"/>
                           <img src={"http://127.0.0.1:5000/img/" + this.state.searchTerm + "_gepm"} width="600" height="350"/>
                         </div>
-                        <div class="column">
+                        {/* <div class="column">
                           <img src={"http://127.0.0.1:5000/img/" + this.state.searchTerm + "_pddtc"} width="600" height="350"/>
-                          <img src={"http://127.0.0.1:5000/img/" + this.state.searchTerm + "_tddtc"} width="600" height="350"/>
-                        </div>
-                        <div class="column">
                           <img src={"http://127.0.0.1:5000/img/" + this.state.searchTerm + "_mddtc"} width="600" height="350"/>
+                        </div> */}
+                        <div class="column">
+                          <img src={"http://127.0.0.1:5000/img/" + this.state.searchTerm + "_tddtc"} width="600" height="350"/>
                           <img src={"http://127.0.0.1:5000/img/" + this.state.searchTerm + "_tmk"} width="600" height="350"/>
                         </div>
                       </div>
