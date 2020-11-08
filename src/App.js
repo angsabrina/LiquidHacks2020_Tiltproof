@@ -26,7 +26,8 @@ class App extends React.Component {
   };
 
   makeApiCall = searchInput => {
-    var searchUrl = `https://tiltproof-backend.herokuapp.com/gettilt`;
+    var searchUrl = `https://tiltproof-backend.herokuapp.com/gettilt=${searchInput}`;
+    console.log(searchInput)
     fetch(searchUrl)
       .then(response => {
         return response.json();
