@@ -4,7 +4,7 @@ The front end for application measuring amount of tilt in a summmoner.
 ## Available Scripts
 
 In the project directory, you can run:
-###`npm install` 
+### `npm install` 
 to install the necessary node modules on your local environment
 and then 
 ### `npm start`
