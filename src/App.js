@@ -20,6 +20,10 @@ class App extends React.Component {
     graph1: '',
   }
 
+  componentDidMount() {
+    document.title = "Are you tilted yet?";
+  }
+
   handleOnChange = event => {
     this.setState({ searchValue: event.target.value });
   };
@@ -50,11 +54,6 @@ class App extends React.Component {
     render(){
       return (
         <div style = {{textAlign: 'center'}}>
-
-
-         
-          
-
             <div style = {{textAlign: 'center', paddingTop: '5vh', background: '#7ECEDF', paddingBottom: '50px' }} >
               <img src={draven} />
               <b><h1 id='title'>TiltPROOF</h1></b>
@@ -68,13 +67,7 @@ class App extends React.Component {
               />
               <button onClick={this.handleSearch} id='pretty_button'>Search</button>
             </div>
-
-
             <div id='background'>
-              
-              
-              
-            
                 {this.state.tilt ? (
                   <>
                     <div id='background'>
@@ -92,24 +85,22 @@ class App extends React.Component {
                           {this.state.tilt_message}
                         </div>
                       </div>
-
                       <div class="row">
                         <div class="column">
-                          <img src={"http://127.0.0.1:5000/img/" + this.state.searchTerm + "_kda"} width="600" height="350"/>
-                          <img src={"http://127.0.0.1:5000/img/" + this.state.searchTerm + "_gepm"} width="600" height="350"/>
+                          <img src={"https://tiltproof-backend.herokuapp.com/gettilt/img/" + this.state.searchTerm + "_kda"} width="600" height="350"/>
+                          <img src={"https://tiltproof-backend.herokuapp.com/gettilt/img/" + this.state.searchTerm + "_gepm"} width="600" height="350"/>
                         </div>
                         {/* <div class="column">
                           <img src={"http://127.0.0.1:5000/img/" + this.state.searchTerm + "_pddtc"} width="600" height="350"/>
                           <img src={"http://127.0.0.1:5000/img/" + this.state.searchTerm + "_mddtc"} width="600" height="350"/>
                         </div> */}
                         <div class="column">
-                          <img src={"http://127.0.0.1:5000/img/" + this.state.searchTerm + "_tddtc"} width="600" height="350"/>
-                          <img src={"http://127.0.0.1:5000/img/" + this.state.searchTerm + "_tmk"} width="600" height="350"/>
+                          <img src={"https://tiltproof-backend.herokuapp.com/gettilt/img/" + this.state.searchTerm + "_tddtc"} width="600" height="350"/>
+                          <img src={"https://tiltproof-backend.herokuapp.com/gettilt/img/" + this.state.searchTerm + "_tmk"} width="600" height="350"/>
                         </div>
                       </div>
                     </div>
                   </>
-                  
                   ) : (
                     <p></p>
                   )}
